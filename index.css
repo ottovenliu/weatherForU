@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 以上為CSS Reset */
+
+body{
+    background-color: #AAD7D8;
+}
+
+img{
+width:100%;
+height:auto;
+display:block; 
+}
+
+*,*::before,*::after{
+box-sizing:border-box;
+}
+
+a{
+text-decoration:none;
+color: white;}
+
+li{
+		list-style: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    width: 1050px;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+main{
+    width: 100%;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 10px;
+    
+}
+
+p{
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+li{
+    line-height: 1.5em;
+}
+
+.co-primary{
+    color:#6e8e87;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mr-14{
+    margin-right: 14px;
+}
+
+/* pc 1920 */
+.logo{  
+    width:333px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+.every-wrap{
+    width: 530px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.every-wrap li{
+    width: 258px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.every-text{
+    margin-right: 36px;
+}
+
+.every-city{
+    font-weight: 700;
+}
+
+.every-wrap img{
+    width: 38px;
+    height: 38px;
+    /* display: inline-block; */
+}
+
+
+.city-detail{
+    width: 488px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 40px 30px;
+
+} 
+
+.city-detail img{
+    width: 74px;
+    height: 74px;
+}
+
+.details-wrap{
+    flex-direction: column;
+}
+
+.morning{
+    margin-bottom: 50px;
+}
+
+
+.morning-icon img{
+    width: 140px;
+    height: 140px;
+}
+
+.morning-min, .morning-max, .morning-rain{
+    font-size: 30px;
+}
+
+.detail-title{
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.detail-title p{
+    font-size: 18px;
+}
+
+.morning-icon, .night-icon, .tomorrow-icon{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 44px;
+    margin-left: 10px;
+}
+
+.night-icon, .tomorrow-icon{
+    margin-left: 50px;
+    margin-right: 76px;
+}
+
+.temp-rain-wrap {
+    flex-direction: column;
+    
+}
+
+.morning-temp{
+    margin-bottom: 28px;
+}
+
+.temp-rain-wrap div > p{
+    margin-bottom: 8px;
+    color:#6E8E87;
+}
+
+
+
+hr{
+    border:1px solid #AAD7D8;
+    margin-bottom: 45px;
+}
+
+.night{
+    /* margin-left: 80px; */
+    margin-bottom: 68px;
+}
+
+.night-icon > p, .tomorrow-icon > p{
+    margin-bottom: 16px;
+
+}
+
+.night ul, .tomorrow ul{
+    flex-direction: column;
+    justify-content: center;
+}
+
