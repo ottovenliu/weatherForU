@@ -271,6 +271,11 @@ function tabShift(startTime,startHour){
 		document.querySelector('#period2').textContent=TimeName.T06.B
 		document.querySelector('#period3').textContent=TimeName.T06.C
 	};
+	if ((startHour=='00')){
+		document.querySelector('#period1').textContent=TimeName.T18.A
+		document.querySelector('#period2').textContent=TimeName.T18.B
+		document.querySelector('#period3').textContent=TimeName.T18.C
+	};
 	if ((startHour=='12')){
 		document.querySelector('#period1').textContent=TimeName.T06.A
 		document.querySelector('#period2').textContent=TimeName.T06.B
@@ -285,14 +290,4 @@ function tabShift(startTime,startHour){
 
 
 
-
-function renderData(data){
-	let length=data.location.length
-	for(let i=0; i<length; i++){
-		const location=data.location[i].locationName;
-		let everCity = document.getElementById(location)
-		console.log(everCity)
-		
-	}
-}
 
