@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    color:#444444
 }
 ol, ul {
 	list-style: none;
@@ -73,6 +74,11 @@ li{
 
 .d-flex{
     display: flex;
+}
+
+/* add */
+.every-city:hover{
+    cursor: pointer;
 }
 
 .wrap{
@@ -143,16 +149,20 @@ li{
 }
 
 .every-text{
-    margin-right: 36px;
+    /* margin-right: 36px; */
+    display: flex;
+    align-items: center;
 }
 
 .every-city{
     font-weight: 700;
+    margin-right: 10px;
 }
 
 .every-wrap img{
     width: 38px;
     height: 38px;
+    margin-left: 37px;
     /* display: inline-block; */
 }
 
