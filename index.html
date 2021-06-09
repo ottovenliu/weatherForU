@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,18 @@
     <link rel="shortcut icon" type="image/png" href="images/clear.png">
     <title>WeatherForÜ</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="RWD.css">
 </head>
+
 <body>
-    
+
     <div class="wrap d-flex">
         <img class="logo" src="images/logo.png" alt="WeatherForU logo">
 
-    <main class="d-flex" id="main-flex">
-        <div class="every-sec">
-            <ul class="every-wrap d-flex" id="everyWrap">
-                <!-- <li class="d-flex" id="基隆市">   
+        <main class="d-flex" id="main-flex">
+            <div class="every-sec">
+                <ul class="every-wrap d-flex" id="everyWrap">
+                    <!-- <li class="d-flex" id="基隆市">   
                     <div class="every-text">
                         <span class="every-city">基隆市</span>
                         <span class="every-min">--℃</span>
@@ -26,42 +29,43 @@
                     <img class="every-city-icon" src="images/cloudy.png" alt="">
                 </li> -->
 
-            </ul>
-        </div>
+                </ul>
+            </div>
 
-        <div class="city-detail">
-            <div class="detail-title d-flex">
-                <h1></h1>
-                <p>縣市預報</p>
-            </div>  
+            <div class="city-detail">
+                <div class="detail-title d-flex">
+                    <h1></h1>
+                    <p>縣市預報</p>
+                    <img src="./images/close.png" alt="crosswindow">
+                </div>
 
-            <div class="details-wrap d-flex">
-                <section class="morning d-flex">
-                    <div class="morning-icon d-flex">
-                        <p id='period1'></p>
-                        <img class='period1-icon' src="images/clear.png" alt="">
-                    </div>
-                    <div class="temp-rain-wrap d-flex">
-                        <div class="morning-temp">
-                            <p>溫度區間</p>
-                            <span class="morning-min"></span>
-                            <!-- <span>-</span> -->
-                            <span class="morning-max"></span>
+                <div class="details-wrap d-flex">
+                    <section class="morning d-flex">
+                        <div class="morning-icon d-flex">
+                            <p id='period1'></p>
+                            <img class='period1-icon' src="images/clear.png" alt="">
                         </div>
-                        <div>
-                            <p>降雨機率</p>
-                            <span class="morning-rain"></span>
+                        <div class="temp-rain-wrap d-flex">
+                            <div class="morning-temp">
+                                <p>溫度區間</p>
+                                <span class="morning-min"></span>
+                                <!-- <span>-</span> -->
+                                <span class="morning-max"></span>
+                            </div>
+                            <div>
+                                <p>降雨機率</p>
+                                <span class="morning-rain"></span>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <hr>
+                    <hr>
 
-                <section class="night d-flex">
-                    <div class="night-icon d-flex">
-                        <p id='period2'></p>
-                        <img class='period2-icon'src="images/clear.png" alt="">
-                    </div>
+                    <section class="night d-flex">
+                        <div class="night-icon d-flex">
+                            <p id='period2'></p>
+                            <img class='period2-icon' src="images/clear.png" alt="">
+                        </div>
                         <ul class="d-flex">
                             <li class="mb-10">
                                 <span class="co-primary fw-700 mr-14">溫度區間</span>
@@ -74,14 +78,14 @@
                                 <span class="night-rain"></span>
                             </li>
                         </ul>
-                </section>
+                    </section>
 
-                <section class="tomorrow d-flex">
+                    <section class="tomorrow d-flex">
                         <div class="tomorrow-icon">
                             <p id='period3'></p>
                             <img class='period3-icon' src="images/clear.png" alt="">
                         </div>
-                    
+
                         <ul class="d-flex">
                             <li class="mb-10">
                                 <span class="co-primary fw-700 mr-14">溫度區間</span>
@@ -89,27 +93,28 @@
                                 <!-- <span>-</span> -->
                                 <span class="tomorrow-max"></span>
                             </li>
-                            
+
                             <li>
                                 <span class="co-primary fw-700 mr-14">降雨機率</span>
                                 <span class="tomorrow-rain"></span>
                             </li>
                         </ul>
-                    
-                </section>
-        </div>
 
-        </div>
-    </main>
+                    </section>
+                </div>
+
+            </div>
+        </main>
 
     </div>
 
 
     <script>
-		// 中央氣象局網站
-		// https://opendata.cwb.gov.tw/index
-		const CWB_API_KEY="CWB-2EF6C203-2256-404D-AD80-5E9DE0982C6A";
-	</script>
-	<script src="index.js"></script>
+        // 中央氣象局網站
+        // https://opendata.cwb.gov.tw/index
+        const CWB_API_KEY = "CWB-2EF6C203-2256-404D-AD80-5E9DE0982C6A";
+    </script>
+    <script src="index.js"></script>
 </body>
+
 </html>

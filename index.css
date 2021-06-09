@@ -188,6 +188,7 @@ li{
 .detail-title{
     align-items: center;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .detail-title p{
@@ -244,46 +245,13 @@ hr{
     justify-content: center;
     margin-top: 28px;
 }
+#main-flex > div.city-detail > div.detail-title.d-flex > img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    display: none;
 
-/* RWD 500 */
-@media (max-width: 500px){
-    .wrap{
-        width: 100%;
-        
-    }
-
-    main{
-        width: 100%;
-    }
-
-    .logo{
-        width: 280px;
-        margin-top: 40px;
-    }
-
-    .city-detail{
-        display:none;
-    }
-
-    .every-sec{
-        display: flex;
-        justify-content:center;
-    }
-
-    .every-wrap{
-        width: 92%;
-        justify-content:space-around;
-    }
-
-    .every-wrap li{
-        width: 160px;
-    }
-
-    .every-min, .every-max{
-        font-size: 14px;
-    }
-
-    .every-text{
-        margin-right: 10px;
-    }
 }
+
