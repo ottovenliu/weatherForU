@@ -4,7 +4,11 @@
 // '基隆市','澎湖縣','彰化縣','連江縣']
 
 // database: F-C0032-001 "三十六小時天氣預報"
+<<<<<<< HEAD
 fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization="+CWB_API_KEY).then((response)=>{
+=======
+fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-2EF6C203-2256-404D-AD80-5E9DE0982C6A").then((response)=>{
+>>>>>>> c91d545370d2e9520256e5e09cb420c8f9230356
 	return response.json();
 }).then((data)=>{
 	data=data.records;
@@ -75,6 +79,7 @@ function render(data){
 		cityIcon.className="every-city-icon"
 		// console.log(everycity.textContent, data[i].location.weatherElement[1].time[0].parameter.parameterName + '%')
 		if (data[i].location.weatherElement[1].time[0].parameter.parameterName<=30){
+<<<<<<< HEAD
 			cityIcon.src="images/clear 2.png"
 		};
 		if ((30<data[i].location.weatherElement[1].time[0].parameter.parameterName)&&(data[i].location.weatherElement[1].time[0].parameter.parameterName<=60)){
@@ -87,6 +92,22 @@ function render(data){
 
 		everytext.append(everycity, everymin, everymax, cityIcon)
 		dflex.appendChild(everytext)
+=======
+			cityIcon.src="images/clear.png"
+		};
+		if ((30<data[i].location.weatherElement[1].time[0].parameter.parameterName)&&(data[i].location.weatherElement[1].time[0].parameter.parameterName<=60)){
+			cityIcon.src="images/cloudy.png"
+		};
+		if (60<data[i].location.weatherElement[1].time[0].parameter.parameterName){
+			cityIcon.src="images/rainy.png"
+		};
+		
+
+		everytext.append(everycity, everymin, everymax)
+
+		dflex.appendChild(everytext)
+		dflex.appendChild(cityIcon)
+>>>>>>> c91d545370d2e9520256e5e09cb420c8f9230356
 		
 		const everywrap=document.querySelector("#everyWrap")
 		everywrap.appendChild(dflex)
@@ -121,6 +142,7 @@ function initWeather(){
 	
 		const period1Icon = document.querySelector(".period1-icon")
 		if (locations[i].location.weatherElement[1].time[0].parameter.parameterName<=30){
+<<<<<<< HEAD
 			period1Icon.src="images/clear 2.png"
 		};
 		if ((30<locations[i].location.weatherElement[1].time[0].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[0].parameter.parameterName<=60)){
@@ -128,6 +150,15 @@ function initWeather(){
 		};
 		if (60<locations[i].location.weatherElement[1].time[0].parameter.parameterName){
 			period1Icon.src="images/rainy 1.png"
+=======
+			period1Icon.src="images/clear.png"
+		};
+		if ((30<locations[i].location.weatherElement[1].time[0].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[0].parameter.parameterName<=60)){
+			period1Icon.src="images/cloudy.png"
+		};
+		if (60<locations[i].location.weatherElement[1].time[0].parameter.parameterName){
+			period1Icon.src="images/rainy.png"
+>>>>>>> c91d545370d2e9520256e5e09cb420c8f9230356
 		};
 	
 		// Period 2 
@@ -142,6 +173,7 @@ function initWeather(){
 	
 		const period2Icon = document.querySelector(".period2-icon")
 		if (locations[i].location.weatherElement[1].time[1].parameter.parameterName<=30){
+<<<<<<< HEAD
 			period2Icon.src="images/clear 2.png"
 		};
 		if ((30<locations[i].location.weatherElement[1].time[1].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[1].parameter.parameterName<=60)){
@@ -149,6 +181,15 @@ function initWeather(){
 		};
 		if (60<locations[i].location.weatherElement[1].time[1].parameter.parameterName){
 			period2Icon.src="images/rainy 1.png"
+=======
+			period2Icon.src="images/clear.png"
+		};
+		if ((30<locations[i].location.weatherElement[1].time[1].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[1].parameter.parameterName<=60)){
+			period2Icon.src="images/cloudy.png"
+		};
+		if (60<locations[i].location.weatherElement[1].time[1].parameter.parameterName){
+			period2Icon.src="images/rainy.png"
+>>>>>>> c91d545370d2e9520256e5e09cb420c8f9230356
 		};
 
 		// Period 3
@@ -163,6 +204,7 @@ function initWeather(){
 	
 		const period3Icon = document.querySelector(".period3-icon")
 		if (locations[i].location.weatherElement[1].time[2].parameter.parameterName<=30){
+<<<<<<< HEAD
 			period3Icon.src="images/clear 2.png"
 		};
 		if ((30<locations[i].location.weatherElement[1].time[2].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[2].parameter.parameterName<=60)){
@@ -170,6 +212,15 @@ function initWeather(){
 		};
 		if (60<locations[i].location.weatherElement[1].time[2].parameter.parameterName){
 			period3Icon.src="images/rainy 1.png"
+=======
+			period3Icon.src="images/clear.png"
+		};
+		if ((30<locations[i].location.weatherElement[1].time[2].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[2].parameter.parameterName<=60)){
+			period3Icon.src="images/cloudy.png"
+		};
+		if (60<locations[i].location.weatherElement[1].time[2].parameter.parameterName){
+			period3Icon.src="images/rainy.png"
+>>>>>>> c91d545370d2e9520256e5e09cb420c8f9230356
 		};
 	}
 };
@@ -204,6 +255,7 @@ function searchWeather(event){
 		
 			const period1Icon = document.querySelector(".period1-icon")
 			if (locations[i].location.weatherElement[1].time[0].parameter.parameterName<=30){
+<<<<<<< HEAD
 				period1Icon.src="images/clear 2.png"
 			};
 			if ((30<locations[i].location.weatherElement[1].time[0].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[0].parameter.parameterName<=60)){
@@ -211,6 +263,15 @@ function searchWeather(event){
 			};
 			if (60<locations[i].location.weatherElement[1].time[0].parameter.parameterName){
 				period1Icon.src="images/rainy 1.png"
+=======
+				period1Icon.src="images/clear.png"
+			};
+			if ((30<locations[i].location.weatherElement[1].time[0].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[0].parameter.parameterName<=60)){
+				period1Icon.src="images/cloudy.png"
+			};
+			if (60<locations[i].location.weatherElement[1].time[0].parameter.parameterName){
+				period1Icon.src="images/rainy.png"
+>>>>>>> c91d545370d2e9520256e5e09cb420c8f9230356
 			};
 		
 			// Period 2 
@@ -225,6 +286,7 @@ function searchWeather(event){
 		
 			const period2Icon = document.querySelector(".period2-icon")
 			if (locations[i].location.weatherElement[1].time[1].parameter.parameterName<=30){
+<<<<<<< HEAD
 				period2Icon.src="images/clear 2.png"
 			};
 			if ((30<locations[i].location.weatherElement[1].time[1].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[1].parameter.parameterName<=60)){
@@ -232,6 +294,15 @@ function searchWeather(event){
 			};
 			if (60<locations[i].location.weatherElement[1].time[1].parameter.parameterName){
 				period2Icon.src="images/rainy 1.png"
+=======
+				period2Icon.src="images/clear.png"
+			};
+			if ((30<locations[i].location.weatherElement[1].time[1].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[1].parameter.parameterName<=60)){
+				period2Icon.src="images/cloudy.png"
+			};
+			if (60<locations[i].location.weatherElement[1].time[1].parameter.parameterName){
+				period2Icon.src="images/rainy.png"
+>>>>>>> c91d545370d2e9520256e5e09cb420c8f9230356
 			};
 
 			// Period 3
@@ -246,6 +317,7 @@ function searchWeather(event){
 		
 			const period3Icon = document.querySelector(".period3-icon")
 			if (locations[i].location.weatherElement[1].time[2].parameter.parameterName<=30){
+<<<<<<< HEAD
 				period3Icon.src="images/clear 2.png"
 			};
 			if ((30<locations[i].location.weatherElement[1].time[2].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[2].parameter.parameterName<=60)){
@@ -253,6 +325,15 @@ function searchWeather(event){
 			};
 			if (60<locations[i].location.weatherElement[1].time[2].parameter.parameterName){
 				period3Icon.src="images/rainy 1.png"
+=======
+				period3Icon.src="images/clear.png"
+			};
+			if ((30<locations[i].location.weatherElement[1].time[2].parameter.parameterName)&&(locations[i].location.weatherElement[1].time[2].parameter.parameterName<=60)){
+				period3Icon.src="images/cloudy.png"
+			};
+			if (60<locations[i].location.weatherElement[1].time[2].parameter.parameterName){
+				period3Icon.src="images/rainy.png"
+>>>>>>> c91d545370d2e9520256e5e09cb420c8f9230356
 			};
 
 		
@@ -271,6 +352,14 @@ function tabShift(startTime,startHour){
 		document.querySelector('#period2').textContent=TimeName.T06.B
 		document.querySelector('#period3').textContent=TimeName.T06.C
 	};
+<<<<<<< HEAD
+=======
+	if ((startHour=='00')){
+		document.querySelector('#period1').textContent=TimeName.T18.A
+		document.querySelector('#period2').textContent=TimeName.T18.B
+		document.querySelector('#period3').textContent=TimeName.T18.C
+	};
+>>>>>>> c91d545370d2e9520256e5e09cb420c8f9230356
 	if ((startHour=='12')){
 		document.querySelector('#period1').textContent=TimeName.T06.A
 		document.querySelector('#period2').textContent=TimeName.T06.B
@@ -286,6 +375,7 @@ function tabShift(startTime,startHour){
 
 
 
+<<<<<<< HEAD
 function renderData(data){
 	let length=data.location.length
 	for(let i=0; i<length; i++){
@@ -296,3 +386,5 @@ function renderData(data){
 	}
 }
 
+=======
+>>>>>>> c91d545370d2e9520256e5e09cb420c8f9230356
